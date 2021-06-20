@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Polemploi</title>
+    <link rel="icon" href="../images/favicon.ico"/>
+</head>
+
+<body class="background">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+    <header class="bg-warning ombre">
+        <nav class="navbar">
+            <a class="nav-link text-decoration-none navbar-brand" href="../index.html">
+                <h2 class=" text-dark">Mes Informations</h2>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Polemploi</a></li>
+                <!-- <li class="nav-item"><a href="./views/crud.html" class="nav-link text-dark">CRUD</a></li> -->
+                <li id="drop" class="nav-item dropdown isAdmin hide">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../views/crud/crud_candidature.html">Candidatures</a>
+                    <a class="dropdown-item" href="../views/crud/crud_competence.html">Competences</a>
+                    <a class="dropdown-item" href="../views/crud/crud_offre_emploi.html">Offres</a>
+                    <a class="dropdown-item" href="../views/crud/crud_societe.html">Societes</a>
+                    <a class="dropdown-item" href="../views/crud/crud_type_offre.html">Types Offres</a>
+                    <a class="dropdown-item" href="../views/crud/crud_utilisateur.html">Utilisateurs</a>
+                    <a class="dropdown-item" href="../views/crud/crud_employer.html">Employer</a>
+                    </div>
+                </li>
+                <li class="nav-item isInSociete hide"><a href="../views/societe.html" class="nav-link text-dark">Societe</a></li>
+                <li class="isConnected hide nav-item"><a href="../views/perso.html" id="active" class="active nav-link text-dark">Mes Infos</a></li>
+                <li id="login" class="nav-item"><a href="../views/connexion.html" class="nav-link text-dark hide">login</a></li>
+                <li id="logout" class="nav-item"><a href="" class="nav-link text-dark hide">logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <div class="container container-md container-lg">
+            <div class="card row">
+                <div class="col-md-10 col-lg-10 mx-auto">
+                    <br>
+                    <div class="container paragraphe_infos">
+                        <div class="row">
+                            <p id="username_text" class="col texts">Nom d'utilisateur : </p> 
+                            <input placeholder="Nom d'utilisateur" type="text" class="hide col inputs" id="username">  <!-- form-control -->
+                        </div>
+                        <div class="row">
+                            <p id="tel_text" class="col texts">Telephone : </p> 
+                            <input placeholder="Telephone" type="text" class="hide col inputs" id="tel">  <!-- form-control -->
+                            <div class="col-md-1 inputsBis"></div>
+                            <p id="email_text" class="col texts">Email : </p>
+                            <input placeholder="Email" type="text" class="hide col inputs" id="email">
+                        </div>
+                        <div class="row">
+                            <p id="nom_text" class="col texts">Nom : </p>
+                            <input placeholder="Nom" type="text" class="hide col inputs" id="nom"> 
+                            <div class="col-md-1 inputsBis"></div>
+                            <p id="prenom_text" class="col texts">Prenom : </p>
+                            <input placeholder="Prenom" type="text" class="hide col inputs" id="prenom">
+                        </div>
+                        <div class="row">
+                            <p id="bio_text" class="col texts">Biographie : </p>
+                            <textarea placeholder="Biographie" class="hide col inputs" id="bio"></textarea>
+                        </div>
+                        <div class="row">
+                            <input placeholder="Mot de passe" type="password" class="hide col inputs" id="password">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <button type="button" class="btn btn-success col inputs hide" id="button_appliquer_modif">Modifier</button>
+                            <button type="button" class="btn btn-warning col texts" id="button_modif">Modifier</button>
+                            <div class="col-md-1"></div>
+                            <button type="button" class="btn btn-danger col inputs hide" id="button_cancel">Annuler</button>
+                            <button type="button" class="btn btn-danger col texts" id="button_supprimer">Supprimer</button>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <button type="button" class="btn btn-success col" id="button_ajouter_societe">Ajouter une Societe</button>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../javascripts/perso.js"></script>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

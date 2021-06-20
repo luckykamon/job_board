@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Crud Offre Emploi</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+
+<body class="bg-light text-dark">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <header class="bg-warning ombre">
+        <nav class="navbar">
+            <a class="nav-link text-decoration-none navbar-brand" href="../../index.html">
+                <h2 class=" text-dark">CRUD Offres Emplois</h2>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../../index.html" class="nav-link text-dark">Polemploi</a></li>
+                <!-- <li class="nav-item"><a href="./views/crud.html" class="nav-link text-dark">CRUD</a></li> -->
+                <li id="drop" class="nav-item dropdown isAdmin hide">
+                    <a  id="active" class="active nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+                    <div class="dropdown-menu" aria-labelledby="active">
+                        <a class="dropdown-item" href="../../views/crud/crud_candidature.html">Candidatures</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_competence.html">Competences</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_offre_emploi.html">Offres</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_societe.html">Societes</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_type_offre.html">Types Offres</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_utilisateur.html">Utilisateurs</a>
+                        <a class="dropdown-item" href="../../views/crud/crud_employer.html">Employer</a>
+                    </div>
+                </li>
+                <li class="nav-item isInSociete hide"><a href="../../views/societe.html" class="nav-link text-dark">Societe</a></li>
+                <li class="isConnected hide nav-item"><a href="../../views/perso.html" class="nav-link text-dark">Mes Infos</a></li>
+                <li id="login" class="nav-item"><a href="../../views/connexion.html" class="nav-link text-dark hide">login</a></li>
+                <li id="logout" class="nav-item"><a href="" class="nav-link text-dark hide">logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr class="thead-dark" id="propriete">
+                        <th scope="col">Titre</th>
+                        <th scope="col">Salaire</th>
+                        <th scope="col">Lieu</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Societe</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="form-control" type="text" id="offre_titre_input">
+                        </td>
+                        <td>
+                            <input class="form-control" type="number" id="offre_salaire_input" min="0">
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" id="offre_lieu_input">
+                        </td>
+                        <td>
+                            <textarea class="form-control" name="offre_description_textarea"
+                                id="offre_description_textarea"></textarea>
+                        </td>
+                        <td>
+                            <select class="form-control" name="societe_nom" id="societe_nom_select">
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" name="type_nom" id="type_nom_select">
+                            </select>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-success" id="boutton_ajouter">Ajouter</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../../javascripts/crud/crud_offre_emploi.js"></script>
+
+    <footer>
+    </footer>
+
+
+</body>
+
+</html>

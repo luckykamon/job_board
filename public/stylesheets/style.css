@@ -1,0 +1,56 @@
+
+.background
+{
+    background-color: lightgrey;
+}
+
+main .card
+{
+    box-shadow: 5px 5px 5px grey;
+}
+
+.ombre
+{
+    box-shadow: 5px 5px 5px grey;
+}
+
+.none_list
+{
+    list-style: none;
+}
+
+.hide
+{
+    display: none;
+}
+
+.inline
+{
+    display: inline-block;
+}
+
+nav 
+{
+    margin: 0px;
+}
+
+header  
+{
+    background-image:url(../images/background_yellow.png);
+    background-size: 100%;
+}
+
+.show#drop>.nav-link
+{
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+#active
+{
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+header h2
+{
+    font-family: monospace;
+}
