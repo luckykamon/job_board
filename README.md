@@ -5,3 +5,4 @@ Projet école Epitech, octobre 2020, nodejs, site web de recrutrement
 Utiliser la commande npm install
 Importer le fichier autres/polemploi.sql dans une base de donnée
 Modifier le fichier routes/module/bdd.js pour y entrer les informations pour la base de donnée: host, user & password
+Utiliser la commande npm start, le site se lance sur localhost:3000
